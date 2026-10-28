@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.log
+.ralph/
+workshop-runs/
+/runs/
+.vscode/
+.idea/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/

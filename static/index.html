@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Copyright (c) 2026 Peterson Katagiri Zilli; SPDX-License-Identifier: Apache-2.0 -->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <title>Marketing Agent · Peterson Katagiri Zilli</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">AI</div>
+      <div>
+        <p class="eyebrow">MARKETING AGENT · OPEN SOURCE</p>
+        <h1>Marketing Agent</h1>
+      </div>
+      <div class="topbar-note">Execução local · Cases fictícios · Revisão humana</div>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro-card">
+        <div>
+          <p class="eyebrow">DO OPEN SOURCE AO HUMAN-IN-THE-LOOP</p>
+          <h2>Um processo de marketing, duas empresas, agentes em ciclos.</h2>
+          <p class="intro-copy">Acompanhe como o contexto de cada empresa orienta a criação, a revisão por personas e a validação de regras.</p>
+        </div>
+        <div class="flow-pill" aria-label="Etapas da demonstração">
+          <span>Open source</span><b>→</b><span>Ralph</span><b>→</b><span>Agentes</span><b>→</b><span>Revisão humana</span>
+        </div>
+      </section>
+
+      <div id="notice" class="notice" role="status" hidden></div>
+
+      <div class="workspace-grid">
+        <aside class="sidebar">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CATÁLOGO</p>
+              <h2>Empresas e cases</h2>
+            </div>
+            <span id="company-count" class="count-pill">—</span>
+          </div>
+          <div id="catalog" class="catalog-list" aria-live="polite">
+            <div class="loading-card">Carregando cases…</div>
+          </div>
+        </aside>
+
+        <section class="main-column">
+          <section id="case-panel" class="panel case-panel">
+            <div class="empty-state">
+              <span class="empty-icon">01</span>
+              <h2>Selecione uma empresa e uma campanha</h2>
+              <p>Consulte configurações, briefing e histórico antes de iniciar uma nova execução.</p>
+            </div>
+          </section>
+
+          <section id="run-panel" class="panel run-panel" hidden>
+            <div id="run-content"></div>
+          </section>
+
+          <section class="panel history-panel">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">SESSÕES LOCAIS</p>
+                <h2>Execuções</h2>
+              </div>
+              <button id="refresh-button" class="button button-quiet" type="button">Atualizar</button>
+            </div>
+            <div id="run-history" class="run-history">
+              <p class="muted">Nenhuma execução iniciada nesta sessão.</p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <span>Marketing Agent</span>
+      <span>Personas sintéticas não substituem pesquisa com clientes. O resultado requer revisão humana e não autoriza envio ou publicação.</span>
+    </footer>
+  </body>
+</html>
